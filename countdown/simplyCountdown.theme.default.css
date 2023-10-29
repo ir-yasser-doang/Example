@@ -94,7 +94,7 @@
     }
 }
 
-/* Mobile Phone */
+/* Mobile Phone Max*/
 @media (max-width: 576px) {
     html {
         font-size: 60%;
@@ -121,5 +121,35 @@
 
     .timeline li .timeline-panel ::after {
         top: 31px;
+    }
+}
+
+/* Mobile Phone Min*/
+@media (max-width: 365px) {
+    html {
+        font-size: 50%;
+    }
+
+    .simply-countdown > .simply-section {
+        padding: 30px;
+        margin: 1px;
+    }
+
+    .timeline li .timeline-image {
+        width: 80px;
+        height: 80px;
+    }
+
+    .timeline li .timeline-panel {
+        width: 50%;
+        transform: translateX(-15px);
+    }
+
+    .timeline li .timeline-panel ::before {
+        top: 20px;
+    }
+
+    .timeline li .timeline-panel ::after {
+        top: 21px;
     }
 }
