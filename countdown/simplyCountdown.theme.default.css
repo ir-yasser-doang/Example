@@ -127,29 +127,29 @@
 /* Mobile Phone Min*/
 @media (max-width: 365px) {
     html {
-        font-size: 50%;
+        font-size: 60%;
     }
 
     .simply-countdown > .simply-section {
-        padding: 30px;
-        margin: 1px;
+        padding: 40px;
+        margin: 3px;
     }
 
     .timeline li .timeline-image {
-        width: 80px;
-        height: 80px;
+        width: 100px;
+        height: 100px;
     }
 
     .timeline li .timeline-panel {
-        width: 50%;
-        transform: translateX(-15px);
+        width: 60%;
+        transform: translateX(-20px);
     }
 
     .timeline li .timeline-panel ::before {
-        top: 20px;
+        top: 25px;
     }
 
     .timeline li .timeline-panel ::after {
-        top: 21px;
+        top: 26px;
     }
 }
