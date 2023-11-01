@@ -127,12 +127,12 @@
 /* Mobile Phone Min*/
 @media (max-width: 365px) {
     html {
-        font-size: 55%;
+        font-size: 45%;
     }
 
     .simply-countdown > .simply-section {
-        padding: 35x;
-        margin: 1px;
+        padding: 30x;
+        margin: 0.5px;
     }
 
     .timeline li .timeline-image {
