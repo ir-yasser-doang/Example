@@ -41,7 +41,7 @@
         aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
         <div class="offcanvas-header">
           <h5 class="offcanvas-title" id="offcanvasNavbarLabel">SerBec</h5>
           <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -57,6 +57,7 @@
           </div>
         </div>
       </div>
+    </div>
   </nav>
   <!-- Navbar End -->
 
@@ -477,15 +478,21 @@
 
   <!-- ofcanvas mobile Start -->
   <script>
-    const stickyTop = document.querySelector('.sticky-top');
+    const mynavbar = document.querySelector('.mynavbar');
+    const offcanvasheader = document.querySelector('.offcanvas-header');
     const offcanvas = document.querySelector('.offcanvas');
+    const navbarnav = document.querySelector('.navbar-nav');
 
     offcanvas.addEventListener('show.bs.offcanvas', function () {
-      stickyTop.style.overflow = 'visible';
+      mynavbar.style.overflow = 'visible';
     });
 
     offcanvas.addEventListener('hidden.bs.offcanvas', function () {
-      stickyTop.style.overflow = 'hidden';
+      mynavbar.style.overflow = 'hidden';
+    });
+
+    navbarnav.addEventListener('click', function () {
+      mynavbar.style.overflow = 'hidden';
     });
   </script>
   <!-- ofcanvas mobile end -->
